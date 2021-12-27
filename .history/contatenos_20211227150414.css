@@ -14,7 +14,7 @@ body{
     margin: 0.3em;
 }
 .inputdiv > input,textarea {
-    border-radius: 0.7em;
+    border-radius: 1em;
 } 
 
 .bottomnav{
