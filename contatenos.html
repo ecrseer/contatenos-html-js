@@ -13,34 +13,41 @@
 <body>
 
     <main class="main">
-        <form action="enviar" method="post">
-            <div class="inputdiv">
-                <label for="Nome">Nome *</label>
-                <input type="text" name="Nome" required class="sombrinha" class="sombrinha">
-            </div>
-            <div class="inputdiv">
-                <label for="Email">Email *</label>
-                <input type="email" name="Email" required class="sombrinha">
-            </div>
-            <div class="inputdiv">
-                <label for="Empresa">Empresa *</label>
-                <input type="text" name="Empresa" required class="sombrinha">
-            </div>
-            <div class="inputdiv">
-                <label for="Tel">Tel *</label>
-                <input name="Tel" required class="sombrinha" type="tel" 
-                id="phone" pattern="([0-9]{2})[0-9]{4}-[0-9]{4}">
-            </div>
-            <div class="inputdiv">
-                <label for="Msg">Mensagem *</label>
-                <textarea name="Msg" required class="sombrinha"></textarea>
-            </div>
+        <form action="enviar" method="post" class="sombrinha" onsubmit="">
+            <div class="titulo"><h4>Fale conosco</h4></div>
+            <section class="wrapinputs">
+                <div class="inputdiv">
+                    <label for="Nome">Nome *</label>
+                    <input type="text" name="Nome" required class="sombrinha" class="sombrinha">
+                </div>
+                <div class="inputdiv">
+                    <label for="Email">Email *</label>
+                    <input type="email" name="Email" required class="sombrinha">
+                </div>
+                <div class="inputdiv">
+                    <label for="Empresa">Empresa *</label>
+                    <input type="text" name="Empresa" required class="sombrinha">
+                </div>
+                <div class="inputdiv">
+                    <label for="Tel">Tel *</label>
+                    <input name="Tel" required class="sombrinha" type="tel" 
+                    id="phone" pattern="([0-9]{2})[0-9]{4}-[0-9]{4}">
+                </div>
+                <div class="inputdiv">
+                    <label for="Msg">Mensagem *</label>
+                    <textarea name="Msg" required class="sombrinha"></textarea>
+                </div>
+                
+            </section>
             <div class="submitbutton">
-                <button type="submit" class="sombrinha">abcd</button>
+                <button type="submit" class="">黎</button>
             </div>
         </form>
     </main>
-    <section class="bottomnav">
+    <section class="bottomnav sombrinha">
+        <a href="http://">Home</a>
+        <a href="http://">Sobre</a>
+        
 
     </section>
 

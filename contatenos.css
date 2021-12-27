@@ -1,16 +1,29 @@
 body{
-    display: flex;
+    display: grid;
+    place-items: center;
+    --cor-fundo:rgb(247, 247, 238);
 }
-.main{
-    background: rgb(243, 243, 243);
+.main{ 
+    background: white;
     width: 100%;
     height: 100%;
 }
 form{  
+    background: var(--cor-fundo);    
+    margin: 4em 5%;  
+    padding: 11%; 
+    max-width: 900px;   
+
+}
+.wrapinputs{
     display: flex;    
-    margin: 3em 7%;  
-    flex-wrap: wrap;  
-    max-width: 700px;  
+    flex-wrap: wrap; 
+}
+.titulo{
+    padding: 0 2em;
+    margin: 0 2em;
+    display: grid;
+    place-items: center;
 }
 .inputdiv{
     display: flex;
@@ -35,18 +48,31 @@ input{
     max-width: 21vh;
     max-height: 3vh;
 }
-.submitbutton{
-    margin: 1em; 
+.submitbutton{    
+    margin: 3.8em;
+    display: grid;
+    place-items: center;
+
 }
-.submitbutton>button{
-    width: 10vh;
-    height: 10vh;
+.submitbutton>button{ 
+    font-size: 32px;
+    border: 1px solid;
+    border-radius: 0 2em;
+    background: none; 
+    width: 11vh;
+
 }
 
 .bottomnav{
-    background: red;
+    background: var(--cor-fundo);
     position: fixed;
     bottom: 0;
     width: 100%;
     height: 4em;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+}
+.bottomnav>a{
+    width: 10%;
 }
