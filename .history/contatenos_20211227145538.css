@@ -12,9 +12,8 @@ body{
     margin: 0.4em;
 }
 .inputdiv > input,textarea {
-    border-radius: 1em;
+    border-radius: 2em;
 }
-
 .bottomnav{
     background: red;
     position: fixed;
@@ -25,6 +24,6 @@ body{
 form{  
     display: flex;  
     flex: 1 1 20px;
-    flex-wrap: wrap;    
-    justify-content: space-around;
+    flex-wrap: wrap;
+    just
 }

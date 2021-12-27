@@ -9,12 +9,8 @@ body{
 }
 .inputdiv{
     display: flex;
-    margin: 0.4em;
+    flex
 }
-.inputdiv > input,textarea {
-    border-radius: 1em;
-}
-
 .bottomnav{
     background: red;
     position: fixed;
@@ -23,8 +19,7 @@ body{
     height: 5em;
 }
 form{  
-    display: flex;  
-    flex: 1 1 20px;
-    flex-wrap: wrap;    
-    justify-content: space-around;
+    display: flex; 
+    border: 1px red solid; 
+    flex-direction: column;
 }

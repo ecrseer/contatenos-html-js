@@ -14,7 +14,7 @@ body{
 .inputdiv > input,textarea {
     border-radius: 1em;
 }
-
+input,textarea
 .bottomnav{
     background: red;
     position: fixed;
