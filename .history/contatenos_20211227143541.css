@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+    display: flex;
+}
+.main{
+    background: rgb(164, 164, 238);
+    width: 100%;
+    height: 100%;
+}
+textarea,input{
+    display: flex;
+    width: 50%;
+    justify-self: right;
+}
+.bottomnav{
+    background: red;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5em;
+}
+form{
+    width: 80%;
+    border: 1px red solid;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+}
