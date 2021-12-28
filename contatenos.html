@@ -9,58 +9,82 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    
-    
+
+    <!-- font awesome para icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="contatenos.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="alertdialog.css">
+
     <title>Contate-nos</title>
 </head>
 
 <body>
 
-    <main class="main">
+    <main class="main grid-center">
         <form class="sombrinha borda-5" name="contato" onsubmit="return enviarFormulario(event);">
-            <div class="titulo"><h4>Fale conosco</h4></div>
+            <div class="titulo grid-center">
+                <h4>Fale conosco</h4>
+            </div>
             <section class="wrapinputs">
                 <div class="inputdiv">
                     <label for="Nome">Nome *</label>
-                    <input type="text" id="tempno" name="Nome"                  
-                    class="sombrinha"  >
+                    <input type="text" id="tempno" name="Nome" class="sombrinha">
                 </div>
                 <div class="inputdiv">
                     <label for="Email">Email *</label>
-                    <input type="email" name="Email"  class="sombrinha">
+                    <input type="email" name="Email" class="sombrinha">
                 </div>
                 <div class="inputdiv">
                     <label for="Empresa">Empresa *</label>
-                    <input type="text" name="Empresa"  class="sombrinha">
+                    <input type="text" name="Empresa" class="sombrinha">
                 </div>
                 <div class="inputdiv">
                     <label for="Tel">Tel *</label>
-                    <input name="Tel"  class="sombrinha" type="tel" 
-                    id="phone" pattern="[0-9]{10}">
+                    <input name="Tel" class="sombrinha" type="tel" id="phone" pattern="[0-9]{10}">
                 </div>
                 <div class="inputdiv">
                     <label for="Msg">Mensagem *</label>
-                    <textarea name="Msg"  class="sombrinha"></textarea>
+                    <textarea name="Msg" class="sombrinha"></textarea>
                 </div>
-                
+
             </section>
-            <div class="submitbutton">
+            <div class="submitbutton grid-center">
                 <button type="submit" class="sombrinha borda-5">黎</button>
             </div>
         </form>
-        <section class="sombrinha">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat sit quam, id itaque iste alias assumenda autem ea quis, debitis ullam, consequuntur quasi magni. Quae est eum deleniti esse voluptates.</section>
+        <section class="sombrinha grid-center borda-5 mapa">
+            <iframe src="https://maps.google.com/maps?q=
+                R.+Teófilo+Otoni,+82&ie=UTF8&iwloc=&output=embed" 
+                frameborder="0" class="mapa borda-5"></iframe>
+
+        </section>
+        <div></div>
+
         <section class="alertadialog sombrinha ">txt</section>
     </main>
-    <section class="bottomnav sombrinha ">
+    <section class="bottomnav sombrinha grid-center">
         <a href="http://">Home</a>
         <a href="http://">Sobre</a>
-        
+        <div class="espaco"></div>
+
+
+        <a href="http://"><i class="fab fa-facebook-f"></i></a>
+        <a href="http://"><i class="fab fa-whatsapp"></i></a>
+        <a href="http://"><i class="fab fa-linkedin-in"></i></a>
+
+
 
     </section>
 
     <script src="contatenos.js"></script>
+
 </body>
 
 </html>
