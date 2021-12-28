@@ -13,7 +13,7 @@
 <body>
 
     <main class="main">
-        <form action="enviar" method="post" class="sombrinha" onsubmit="">
+        <form class="sombrinha" name="contato" onsubmit="return enviarFormulario(event);">
             <div class="titulo"><h4>Fale conosco</h4></div>
             <section class="wrapinputs">
                 <div class="inputdiv">
@@ -31,7 +31,7 @@
                 <div class="inputdiv">
                     <label for="Tel">Tel *</label>
                     <input name="Tel" required class="sombrinha" type="tel" 
-                    id="phone" pattern="([0-9]{2})[0-9]{4}-[0-9]{4}">
+                    id="phone" pattern="[0-9]{10}">
                 </div>
                 <div class="inputdiv">
                     <label for="Msg">Mensagem *</label>
@@ -40,9 +40,11 @@
                 
             </section>
             <div class="submitbutton">
-                <button type="submit" class="">黎</button>
+                <button type="submit" class="sombrinha">黎</button>
             </div>
         </form>
+        <section class="sombrinha">abcd</section>
+        <section class="alertadialog sombrinha ">txt</section>
     </main>
     <section class="bottomnav sombrinha">
         <a href="http://">Home</a>
