@@ -2,7 +2,7 @@ body{
     display: grid;
     place-items: center;
     font-family: 'Raleway', Arial,sans-serif;   
-    --cor-fundo:rgb(247, 247, 238);
+    --cor-fundo:rgb(250, 246, 242);
     --cor-primaria: rgb(105, 85, 72);
 }
 .borda-5{ 
@@ -15,7 +15,7 @@ body{
 }
 
 .sombrinha{
-    box-shadow: 0.2vh 0.2vh 0.8vh;
+    box-shadow: 0.2vh 0.3vh 0.8vh;
 }
 .main{ 
     background: white;
@@ -31,12 +31,23 @@ form{
     max-width: 900px;         
 
 }
+.mapa-container{
 
-.mapa{
-    width:90vh;
-    height: 70vh;
+    width: 100%;
+    display: flex;
+    margin: 4% 0%;
+    flex-direction: column;
 }
 
+.mapa{
+    width:100%;  
+}
+.altura-fixa{
+    height: 70vh;
+}
+.rodape{
+    
+}
 .bottomnav{
     background: var(--cor-fundo);
     position: fixed;
@@ -45,7 +56,7 @@ form{
     height: 4em;
     
     grid-template-columns: repeat(auto-fit,
-    minmax(24px,80px));
+    minmax(2vh,18%));
     
 } 
    

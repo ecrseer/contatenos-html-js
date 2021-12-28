@@ -5,10 +5,10 @@
 
 .alertadialog{
     position: fixed;
-    bottom: 10%;    
+    bottom: 13%;    
     left: 10%;
     width: 80%;
-    height: 6vh;
+    height: 7vh;
     background: rgb(226, 214, 206);
     padding: 1vh;
     text-align: center;

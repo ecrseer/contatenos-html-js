@@ -47,11 +47,11 @@
                 </div>
                 <div class="inputdiv">
                     <label for="Tel">Tel *</label>
-                    <input name="Tel" class="sombrinha" type="tel" id="phone" pattern="[0-9]{10}">
+                    <input name="Tel" class="sombrinha" type="tel" id="phone" placeholder="(99)9999-9999" onkeyup="corrigeTelefone(event);">
                 </div>
                 <div class="inputdiv">
-                    <label for="Msg">Mensagem *</label>
-                    <textarea name="Msg" class="sombrinha"></textarea>
+                    <label for="MsgTxt">Mensagem *</label>
+                    <textarea name="MsgTxt" class="sombrinha"></textarea>
                 </div>
 
             </section>
@@ -59,20 +59,21 @@
                 <button type="submit" class="sombrinha borda-5">黎</button>
             </div>
         </form>
-        <section class="sombrinha grid-center borda-5 mapa">
+        <section class="sombrinha grid-center borda-5 mapa-container altura-fixa">
             <iframe src="https://maps.google.com/maps?q=
                 R.+Teófilo+Otoni,+82&ie=UTF8&iwloc=&output=embed" 
-                frameborder="0" class="mapa borda-5"></iframe>
+                frameborder="0" class="mapa borda-5 altura-fixa"></iframe>
 
         </section>
-        <div></div>
+        <section class="altura-fixa">
 
-        <section class="alertadialog sombrinha ">txt</section>
+        </div>
+
+        <div class="alertadialog sombrinha ">txtErr</section>
     </main>
     <section class="bottomnav sombrinha grid-center">
         <a href="http://">Home</a>
         <a href="http://">Sobre</a>
-        <div class="espaco"></div>
 
 
         <a href="http://"><i class="fab fa-facebook-f"></i></a>
