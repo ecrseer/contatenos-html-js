@@ -15,14 +15,18 @@ function ativaCamposObrigatorios() {
     for (let i = 0; i < inputs.length; i++) {  
         inputs[i].setAttribute("required","")           
     } 
-}
-//setTimeout(4700, ativaCamposObrigatorios())
+} 
 function enviarFormulario(ev) {
     ev.preventDefault()
     ativaCamposObrigatorios()
+    let regexpEmail = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i
+
     let formulario = new FormData(ev.target)
-    let nome = formulario.get("Nome")
     let email = formulario.get("Email")
-    debugger
+    
+    if(email.length<5 || email.match(regexpEmail)==null){
+        debugger
+        mostraAlertDialog("digite um email válido")
+    } 
 
 }

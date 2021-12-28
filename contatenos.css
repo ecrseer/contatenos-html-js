@@ -1,21 +1,31 @@
 body{
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fill,minmax(240px,900px));    
+    font-family: 'Raleway', Arial,sans-serif;   
     --cor-fundo:rgb(247, 247, 238);
     --cor-primaria: rgb(105, 85, 72);
+}
+.borda-5{ 
+    border-radius: 0 5vh;
+}
+
+.sombrinha{
+    box-shadow: 0.2vh 0.2vh 0.8vh;
 }
 .main{ 
     background: white;
     width: 100%;
     max-height: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,
+        minmax(240px,800px));
     
 }
 form{  
     background: var(--cor-fundo);    
     margin: 4em 5%;  
     padding: 7%; 
-    max-width: 900px;     
+    max-width: 900px;         
 
 }
 .wrapinputs{
@@ -34,9 +44,6 @@ form{
     flex: 1 1 auto;
     margin: 0.8em 0.8%;
     justify-content: space-between;
-}
-.sombrinha{
-    box-shadow: 0.2vh 0.2vh 0.8vh;
 }
 .inputdiv > input,textarea {
     border: none;
@@ -60,8 +67,7 @@ input{
 }
 .submitbutton>button{ 
     font-size: 32px;
-    border: 1px solid;
-    border-radius: 0 5vh;
+    border: 1px solid; 
     background: none; 
     width: 11vh;
 
@@ -83,10 +89,7 @@ input{
     grid-template-columns: repeat(2,1fr);
     place-items: center;
     
-}
-.bottomnav>a{
-    width: 10%;
-}
+} 
 @keyframes fadeInEfeito{
     0%{        opacity: 0;    }
     100% { opacity: 1;}
@@ -113,9 +116,6 @@ input{
 input:invalid {
     box-shadow: 0 1px 5px 0px red;
   }
-  input:valid{
-    box-shadow: 0 1px 5px 0px rgb(55, 209, 88);
-  }
-  input:focus {
-    box-shadow: 0 0 5px 1px rgb(36, 187, 233);
-  }
+   
+  
+
