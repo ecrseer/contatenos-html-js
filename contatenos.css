@@ -19,34 +19,49 @@ body{
 }
 .main{ 
     background: white;
-    width: 100%;
-    max-height: 90%; 
+    width: 100%; 
     grid-template-columns: repeat(auto-fit,
-        minmax(240px,800px));     
+        minmax(300px,600px));     
 }
 form{  
     background: var(--cor-fundo);    
-    margin: 4em 5%;  
-    padding: 7%; 
-    max-width: 900px;         
-
+    margin: 4% 3%;  
 }
-.mapa-container{
-
+.mapa-container{ 
     width: 100%;
-    display: flex;
     margin: 4% 0%;
+    display: flex;
     flex-direction: column;
 }
-
-.mapa{
-    width:100%;  
-}
+ 
 .altura-fixa{
-    height: 70vh;
+    height: 50vh;
+}
+.pad5{
+    padding: 5%; 
 }
 .rodape{
-    
+    background: var(--cor-primaria);
+    color: white; 
+    height: 40vh;
+    font-size: 12px;
+    display: flex; 
+    justify-content: space-around;
+}
+.rodape a{
+    color: white; 
+}
+.rodape p{
+    max-width: 70%;
+}
+.rodape> div{
+  max-width: 50%;
+}
+.rodape section{
+    background: var(--cor-fundo);
+    color: black;
+    font-size: 15px;
+    min-width: 40vh;
 }
 .bottomnav{
     background: var(--cor-fundo);

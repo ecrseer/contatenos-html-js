@@ -27,8 +27,8 @@
 
 <body>
 
-    <main class="main grid-center">
-        <form class="sombrinha borda-5" name="contato" onsubmit="return enviarFormulario(event);">
+    <main class="main  grid-center">
+        <form class="form pad5 sombrinha maxwidth-top-container borda-5" name="contato" onsubmit="return enviarFormulario(event);">
             <div class="titulo grid-center">
                 <h4>Fale conosco</h4>
             </div>
@@ -55,22 +55,40 @@
                 </div>
 
             </section>
-            <div class="submitbutton grid-center">
-                <button type="submit" class="sombrinha borda-5">黎</button>
+            <div class="grid-center">
+                <button type="submit" class="sombrinha borda-5 submitbutton">黎</button>
             </div>
         </form>
-        <section class="sombrinha grid-center borda-5 mapa-container altura-fixa">
+        <section class="  sombrinha grid-center borda-5 mapa-container altura-fixa">
             <iframe src="https://maps.google.com/maps?q=
                 R.+Teófilo+Otoni,+82&ie=UTF8&iwloc=&output=embed" 
-                frameborder="0" class="mapa borda-5 altura-fixa"></iframe>
+                frameborder="0" class="borda-5 altura-fixa"></iframe>
+            <div></div>
+        </section> 
 
-        </section>
-        <section class="altura-fixa">
+        <div class="alertadialog sombrinha ">txtErr</div>
+    </main>
+    <section class="main rodape borda-5 pad5">
+        <div class="grid-center">
+            <p>Rua logo ali,42 - Sentido da vida, RJ</p>
+            <a href="http://">Politica de privacidade</a>
+            <a href="http://">Politica de dados</a>
+            <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+        </div>
+        <div class="espaco"></div><div class="espaco"></div><div class="espaco"></div>
+        <div>
+            <section class="grid-center borda-5 pad5">
+                Cadastre seu email e receba noticias do nosso feed!
+                <form class="inputdiv">
+                    <label for="EmailFeed">Email </label>
+                    <input type="email" name="EmailFeed" class="sombrinha">
+                    <button type="submit" class="submitbutton sombrinha borda-5">黎</button>
+                </form> 
+            </section>
 
         </div>
-
-        <div class="alertadialog sombrinha ">txtErr</section>
-    </main>
+            
+    </section>
     <section class="bottomnav sombrinha grid-center">
         <a href="http://">Home</a>
         <a href="http://">Sobre</a>

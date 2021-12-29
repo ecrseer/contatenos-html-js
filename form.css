@@ -27,11 +27,8 @@
 input{ 
     max-width: 21vh;
     max-height: 3vh;
-}
-.submitbutton{    
-    margin: 3.8em;
-}
-.submitbutton>button{ 
+} 
+.submitbutton{ 
     font-size: 32px;
     border: 1px solid; 
     background: none; 
