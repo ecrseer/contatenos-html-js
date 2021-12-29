@@ -40,8 +40,8 @@ form{
 .altura-fixa{
     height: 50vh;
 }
-.pad5{
-    padding: 5%; 
+.pad3{
+    padding: 3%; 
 }
 .card-container{    
     grid-template-columns: repeat(auto-fill,
