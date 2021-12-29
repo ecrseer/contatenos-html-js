@@ -44,11 +44,21 @@ form{
     grid-template-columns: repeat(auto-fill,
         minmax(110px,157px)); 
 }
+.ma4{    margin: 4%;}
+.ma3{    margin: 3%;}
+.ma2{    margin: 2%;}
 .card{
     background: var(--cor-primaria);
     color: white;
-    padding: 0.5em 1em;
-    margin: 4%;
+    padding: 0.5em 1em; 
+    opacity: 0.9;
+}
+.card:hover{
+    transition: all 0.5s linear;
+    margin: 0;
+    opacity: 1;
+    box-shadow: 0.5vh 0.5vh 0.5vh var(--cor-primaria);
+    
 }
 .rodape{
     background: var(--cor-primaria);
