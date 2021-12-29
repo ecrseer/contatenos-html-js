@@ -17,6 +17,9 @@ body{
 .sombrinha{
     box-shadow: 0.2vh 0.3vh 0.8vh;
 }
+.sombrinha-clara{
+    box-shadow: 0.2vh 0.3vh 0.8vh white;
+}
 .main{ 
     background: white;
     width: 100%; 
@@ -67,6 +70,7 @@ form{
     font-size: 12px;
     display: flex; 
     justify-content: space-around;
+    padding-bottom: 7em;
 }
 .rodape a{
     color: white; 
@@ -81,7 +85,7 @@ form{
     background: var(--cor-fundo);
     color: black;
     font-size: 15px;
-    min-width: 40vh;
+    min-width: 20vh;
 }
 .bottomnav{
     background: var(--cor-fundo);
